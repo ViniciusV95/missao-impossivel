@@ -2,6 +2,7 @@ import React from 'react'
 import { Header } from './components/Header'
 import { Card } from './components/Card'
 import Modal, { ModalBody, ModalHeader } from './components/Modal'
+import { Footer } from './components/Footer'
 
 import banner from './imagens/banner.jpg'
 import card1 from './imagens/card1.jpg'
@@ -66,6 +67,7 @@ function App() {
               <Card
                 key={filme.id}
                 imagem={filme.imagem}
+                titulo={filme.titulo}
               />
             )
           })
@@ -115,6 +117,7 @@ function App() {
           </div>
         </ModalBody>
       </Modal>
+      <Footer />
     </>
   );
 }
